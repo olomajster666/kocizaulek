@@ -424,4 +424,30 @@ footer::before {
     padding: 14px 32px;
     min-width: 220px;
     text-align: center;
+
+}
+
+.gallery-item .photo-frame {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+    justify-items: center;       
+    align-items: start;       
+}
+
+.gallery-item .photo-frame {
+    width: 100%;               
+    max-width: 100%;           
+    display: flex;
+    justify-content: center;     
+    align-items: center;          
+    transition: transform 0.3s ease;
+}
+
+.gallery-item .photo-frame img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; 
 }
